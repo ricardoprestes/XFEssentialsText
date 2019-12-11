@@ -6,10 +6,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     x:Class="XFEssentialsTest.Views.MainPage">
-    <StackLayout>
-        <!-- Place new controls here -->
+    <StackLayout
+        Padding="20"
+        >
         <Button
             Text="Share"
             Command="{Binding ShareCommand}"/>
+        <Button
+            Text="Speech"
+            Command="{Binding SpeechCommand}"/>
     </StackLayout>
 </ContentPage>
