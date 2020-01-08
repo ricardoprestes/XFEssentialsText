@@ -15,5 +15,8 @@
         <Button
             Text="Speech"
             Command="{Binding SpeechCommand}"/>
+        <Button
+            Text="Version Tracking"
+            Command="{Binding VersionTrackingCommand}"/>
     </StackLayout>
 </ContentPage>

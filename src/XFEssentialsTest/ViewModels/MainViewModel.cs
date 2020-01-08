@@ -8,11 +8,13 @@ namespace XFEssentialsTest.ViewModels
     {
         public ICommand ShareCommand { get; private set; }
         public ICommand SpeechCommand { get; private set; }
+        public ICommand VersionTrackingCommand { get; private set; }
 
         public MainViewModel()
         {
             ShareCommand = new Command(ShareExecute);
             SpeechCommand = new Command(SpeechExecute);
+            VersionTrackingCommand = new Command(VersionTrackingExecute);
         }
 
         private void ShareExecute()
@@ -23,6 +25,11 @@ namespace XFEssentialsTest.ViewModels
         private void SpeechExecute()
         {
             Application.Current.MainPage.Navigation.PushAsync(new TextToSpeechPage());
+        }
+
+        private void VersionTrackingExecute()
+        {
+            Application.Current.MainPage.Navigation.PushAsync(new VersionTrackingPage());
         }
     }
 }

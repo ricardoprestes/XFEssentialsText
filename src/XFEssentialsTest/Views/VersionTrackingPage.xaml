@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XFEssentialsTest.Views.VersionTrackingPage">
+    <ContentPage.Content>
+        <StackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            >
+
+            <Label
+                Text="First Access"
+                />
+
+            <Label
+                Text="{Binding FirstAccess}"
+                HorizontalTextAlignment="Center"
+                />
+
+            <Label
+                Text="Current version"
+                />
+
+            <Label
+                Text="{Binding CurrentVersion}"
+                HorizontalTextAlignment="Center"
+                />
+
+            <Label
+                Text="Current build"
+                />
+
+            <Label
+                Text="{Binding CurrentBuild}"
+                HorizontalTextAlignment="Center"
+                />
+
+            <Label
+                Text="Previous version"
+                />
+
+            <Label
+                Text="{Binding PreviousVersion}"
+                HorizontalTextAlignment="Center"
+                />
+
+            <Label
+                Text="Previous build"
+                />
+
+            <Label
+                Text="{Binding PreviousBuild}"
+                HorizontalTextAlignment="Center"
+                />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
