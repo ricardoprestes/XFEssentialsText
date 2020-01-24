@@ -18,5 +18,8 @@
         <Button
             Text="Version Tracking"
             Command="{Binding VersionTrackingCommand}"/>
+        <Button
+            Text="Settings"
+            Command="{Binding SettingsCommand}"/>
     </StackLayout>
 </ContentPage>

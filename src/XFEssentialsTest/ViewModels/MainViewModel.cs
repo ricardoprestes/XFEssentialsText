@@ -9,12 +9,14 @@ namespace XFEssentialsTest.ViewModels
         public ICommand ShareCommand { get; private set; }
         public ICommand SpeechCommand { get; private set; }
         public ICommand VersionTrackingCommand { get; private set; }
+        public ICommand SettingsCommand { get; private set; }
 
         public MainViewModel()
         {
             ShareCommand = new Command(ShareExecute);
             SpeechCommand = new Command(SpeechExecute);
             VersionTrackingCommand = new Command(VersionTrackingExecute);
+            SettingsCommand = new Command(SettingsExecute);
         }
 
         private void ShareExecute()
@@ -30,6 +32,11 @@ namespace XFEssentialsTest.ViewModels
         private void VersionTrackingExecute()
         {
             Application.Current.MainPage.Navigation.PushAsync(new VersionTrackingPage());
+        }
+
+        private void SettingsExecute()
+        {
+            Application.Current.MainPage.Navigation.PushAsync(new SettingsPage());
         }
     }
 }
